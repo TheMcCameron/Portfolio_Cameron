@@ -1,9 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<body class="imaged-bg">
-    <div class="container text-xl-right">
-        <h1 class="d-block display-4 text-warning pt-5 intro-msg">Cameron McElwaney</h1>
-        <p class="text-success">Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<body class="imaged-bg" asp-append-version="true">
+    <div class="container-fluid">
+        <div class="card">
+           <img class="card-img-top"
+           src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190530183756/Good-Habits-for-developers-programmers.png"
+           alt="Card image" style="width: 100%;" />
+           <div class="card-body">
+               <div class="card-center">
+                   <h4 style="color: aquamarine">Cameron McElwaney</h4>
+                   <p style="color: rgb(191 73 1)"><b>Junior Fullstack Developer</b></p>
+               <p style="color: rgb(255 255 230)">
+                   I am a developer specializing in .NET development.
+               </p>
+                   <a href="#" class="btn btn-primary">See Profile></a>
+               </div>
+           </div>
     </div>
 </body>

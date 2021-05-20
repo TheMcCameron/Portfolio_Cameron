@@ -25,11 +25,13 @@ namespace Portfolio_Cameron.Controllers
 
         public IActionResult About()
         {
+            ViewBag.Current = "About";
             return View();
         }
 
         public IActionResult Projects()
         {
+            ViewBag.Current = "Projects";
             return View();
         }
 

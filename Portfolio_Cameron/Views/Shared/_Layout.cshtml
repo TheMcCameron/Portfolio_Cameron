@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark mb-5 shadow">
             <a class="navbar-brand" asp-area="none" asp-controller="Home" asp-action="Index">Cameron McElwaney</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -18,10 +18,10 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")">
+                    <li class="nav-item @(ViewBag.Current == "About" ? "active" : "")">
                         <a class="nav-link" asp-area="none" asp-controller="Home" asp-action="About">About</a>
                     </li>
-                    <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "Projects" ? "active" : "")">
+                    <li class="nav-item @(ViewBag.Current == "Projects" ? "active" : "")">
                         <a class="nav-link" asp-area="none" asp-controller="Home" asp-action="Projects">Projects</a>
                     </li>
                 </ul>
@@ -41,15 +41,12 @@
             @RenderBody()
         </main>
     </div>
-    <script>
-        $(document).ready(function () {
-            $('body').find('a[href="' + location.pathname + '"]')
-                .addClass('active');
-        });
-    </script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
