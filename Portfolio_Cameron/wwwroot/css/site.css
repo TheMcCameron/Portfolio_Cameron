@@ -73,9 +73,13 @@ body {
 }
 
 /* Custom styles */
+.about-btn {
+    border: 1px solid black;
+}
+
 .card {
-    width: 600px;
-    background-color: rgb(52 58 64);
+    width: 940px;
+    background-color: rgba(52, 58, 64, 0.91);
     border: 1px solid black;
     box-shadow: 0 5px 10px rgba(154,160,185,0.05),
         0 15px 40px rgba(166,173,201,0.2);
@@ -91,12 +95,87 @@ body {
     justify-content: center;
 }
 
+@media screen and (max-width: 556px) {
+    .card-img-top {
+        width: 200px !important;
+    }
+}
+
 .card-img-top {
-    border: 1px solid black;
+    border: 1px solid silver;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .card-img-top {
+        height: 350px!important;
+        width: 275px!important;
+    }
+
+    #about-img-div {
+        padding-left: 7.5%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .card-img-top {
+        height: 275px!important;
+        width: 200px !important;
+    }
+}
+
+@media screen and (max-width: 533px) {
+    .card-img-top {
+        height: 200px !important;
+        width: 150px !important;
+    }
+
+    #about-img-div {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card-img-top {
+        height: 175px !important;
+        width: 125px !important;
+    }
+
+    #about-img-div {
+        padding-right: 20%;
+        padding-left: 0%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card-img-top {
+        height: 200px !important;
+        width: 150px !important;
+    }
+
+    #about-img-div {
+        padding-right: 100%;
+        padding-left: 20%;
+    }
+    #about-title-div {
+        padding-right: 250px;
+    }
+    .card-title {
+        width: 200px;
+    }
+    .text-subtitle { 
+        width: 200px;
+    }
 }
 
 .card-title {
     color: rgb(95 178 183);
+}
+
+.col-xs-6 { 
+    width: 41.66667%;
 }
 
 .container-fluid {
@@ -119,6 +198,6 @@ body {
 }
 
 .text-subtitle {
-    color: rgb(191 73 33); 
+    color: rgb(191 73 33);
     font-weight: bold;
 }

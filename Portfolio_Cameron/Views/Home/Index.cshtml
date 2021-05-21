@@ -4,30 +4,35 @@
 <head>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
+
 <body class="imaged-bg" asp-append-version="true">
-    <div class="container-fluid">
-        <div class="card">
-            <div class="row d-inline-flex pl-2" id="card-img-row">
-                <!-- TODO: Get professional headshot and size around that. -->
-                <img class="card-img-top col-6 pl-0 pr-0"
-                     src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190530183756/Good-Habits-for-developers-programmers.png"
-                     alt="Card image" />
-                <div class="col-5">
-                    <h4 class="card-title">Cameron McElwaney</h4>
-                    <p class="text-subtitle">Email:</p>
+    <section id="about" class="section section-about">
+        <div class="container-fluid">
+            <div class="profile card">
+                <div class="row pl-5" id="card-img-row">
+                    <!-- TODO: Get professional headshot and size around that. -->
+                    <div id="about-img-div" class="col-6 col-xs-12 row">
+                        <img class="card-img-top pl-0 pr-0"
+                             src="https://via.placeholder.com/1000/000000/FFFFFF/?text=Profile_Image"
+                             alt="Card image" />
+                    </div>
+                    <div id="about-title-div"  class="col-6 col-xs-12 pt-5">
+                        <h4 class="card-title">Cameron McElwaney</h4>
+                        <p class="text-subtitle">Email:</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card-body">
-                <div class="card-center">
-                    <p style="color: rgb(191 73 1)"><b>Junior Fullstack Developer</b></p>
-                    <p style="color: rgb(255 255 230)">
-                        I am a developer specializing in .NET development.
-                    </p>
-                    <a asp-area="none" asp-controller="Home" asp-action="About" class="btn btn-primary">Learn More</a>
+                <div class="card-body">
+                    <div class="card-center">
+                        <p style="color: rgb(191 73 1)"><b>Junior Fullstack Developer</b></p>
+                        <p style="color: rgb(255 255 230)">
+                            I am a developer specializing in .NET development.
+                        </p>
+                        <a asp-area="none" asp-controller="Home" asp-action="About" class="btn btn-primary about-btn">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
