@@ -85,6 +85,20 @@ body {
     text-align: center;
 }
 
+#card-img-row {
+    padding-top: 2%;
+    align-content: center;
+    justify-content: center;
+}
+
+.card-img-top {
+    border: 1px solid black;
+}
+
+.card-title {
+    color: rgb(95 178 183);
+}
+
 .container-fluid {
     display: flex;
     align-items: center;
@@ -104,7 +118,7 @@ body {
     }
 }
 
-#active {
-    color: yellow!important;
+.text-subtitle {
+    color: rgb(191 73 33); 
     font-weight: bold;
 }
