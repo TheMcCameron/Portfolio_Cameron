@@ -3,9 +3,9 @@
 
 
 // Animations & Effects
-$(".navbar").hide().fadeToggle(800);
-$(".navbar-nav").hide().fadeToggle(1000);
-$(".navbar-brand").hide().fadeToggle(1000);
+$(".navbar").hide().fadeIn(1000);
+$(".navbar-nav").hide().fadeIn(2000);
+$(".navbar-brand").hide().fadeIn(2000);
 
 // Stick navbar to top if window scrolled.
 window.addEventListener('scroll', function () {
