@@ -23,15 +23,15 @@ namespace Portfolio_Cameron.Controllers
             return View();
         }
 
-        public IActionResult About()
-        {
-            ViewBag.Current = "About";
-            return View();
-        }
-
         public IActionResult Projects()
         {
             ViewBag.Current = "Projects";
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            ViewBag.Current = "Contact";
             return View();
         }
 
