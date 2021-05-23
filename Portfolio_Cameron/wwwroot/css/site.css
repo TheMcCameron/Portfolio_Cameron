@@ -42,10 +42,6 @@ html {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
 button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
@@ -73,8 +69,10 @@ body {
 }
 
 /* Custom styles */
-.contact-btn {
-    border: 1px solid black;
+.about-container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -170,18 +168,16 @@ body {
     }
 }
 
-.card-title {
-    color: rgb(95 178 183);
+.btn-border {
+    border: 1.5px solid black;
+}
+
+.text-aquablue {
+    color: rgb(95 178 183)!important;
 }
 
 .col-xs-6 { 
     width: 41.66667%;
-}
-
-.container-fluid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .imaged-bg {
@@ -196,8 +192,19 @@ body {
         padding-left: 15px;
     }
 }
+.project-card-color {
+    background-color: rgba(52, 58, 64, 0.91);
+}
+
+.project-page-title-div {
+    background-color: rgba(52, 58, 64, 0.91);
+    border: 1px solid black;
+}
+
+.text-orange {
+    color: rgb(191 73 33);
+}
 
 .text-subtitle {
-    color: rgb(191 73 33);
     font-weight: bold;
 }
