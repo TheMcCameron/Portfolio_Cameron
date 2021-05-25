@@ -83,6 +83,12 @@ body {
         0 15px 40px rgba(166,173,201,0.2);
 }
 
+@media (max-width: 992px) {
+    .row {
+        align-content: center;
+    }
+}
+
 .card-center {
     text-align: center;
 }
@@ -170,6 +176,10 @@ body {
 
 .btn-border {
     border: 1.5px solid black;
+}
+
+.card-subtitle {
+    color: rgb(205 129 9)!important;
 }
 
 .text-aquablue {
