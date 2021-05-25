@@ -18,21 +18,21 @@
                 <div class="col-2"></div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-3 m-3 card text-center project-card-color">
+                <div class="col-3 m-3 card text-center project-card project-card-color">
                     <div class="card-body">
                         <h5 class="card-title text-orange">Project Title</h5>
                         <p class="card-text text-primary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-primary btn-border">Source Code</a>
                     </div>
                 </div>
-                <div class="col-3 m-3 card text-center project-card-color">
+                <div class="col-3 m-3 card text-center project-card project-card-color">
                     <div class="card-body">
                         <h5 class="card-title text-orange">Project Title</h5>
                         <p class="card-text text-primary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-primary btn-border">Source Code</a>
                     </div>
                 </div>
-                <div class="col-3 m-3 card text-center project-card-color ">
+                <div class="col-3 m-3 card text-center project-card project-card-color ">
                     <div class="card-body">
                         <h5 class="card-title text-orange">Project Title</h5>
                         <p class="card-text text-primary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -42,5 +42,13 @@
             </div>
         </div>
     </section>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(".project-page-title-div").fadeOut(500).fadeIn(1200);
+        $(".project-card").fadeOut(500).fadeIn(1200);
+        $(".btn-primary").fadeOut(500).fadeIn(1500);
+    </script>
 </body>
 
