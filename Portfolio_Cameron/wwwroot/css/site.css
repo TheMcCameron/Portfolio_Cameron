@@ -193,6 +193,10 @@ body {
     }
 }
 
+.navbar-font {
+    font-family: "Alatsi";
+}
+
 .project-card-color {
     background-color: rgba(52, 58, 64, 0.91);
 }
